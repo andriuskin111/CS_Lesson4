@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace KD1
 {
@@ -20,12 +21,18 @@ namespace KD1
             //    Console.WriteLine(c);
             //}
 
-            String vardas = "C#Kursas";
+            //String vardas = "C#Kursas";
 
-            for (int i = 0; i < vardas.Length; i++)
+            //for (int i = 0; i < vardas.Length; i++)
+            //{
+            //    char current = vardas[i];
+            //    Console.WriteLine(current);
+            //}
+
+            for (int i = 0; i < 50; i++)
             {
-                char current = vardas[i];
-                Console.WriteLine(current);
+                Thread.Sleep(100); // pause 100 ms
+                Console.Write("#");
             }
 
             Console.ReadLine();
