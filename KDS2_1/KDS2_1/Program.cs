@@ -11,6 +11,7 @@ namespace KDS2_1
         static void Main(string[] args)
         {
             double[] skaiciai = new double[5];
+            double suma = 0;
 
             for (int i = 0; i < 5; i++)
             {
@@ -18,11 +19,18 @@ namespace KDS2_1
                 skaiciai[i] = Convert.ToDouble(Console.ReadLine());
             }
 
-            for (int i = skaiciai.Length - 1; i >= 0; i--)
+            //for (int i = skaiciai.Length - 1; i >= 0; i--)
+            //{
+            //    Console.Write(skaiciai[i]);
+            //}
+
+            foreach(double skaicius in skaiciai)
             {
-                Console.Write(skaiciai[i]);
+                suma += skaicius;
             }
-          //  Console.WriteLine(skaiciai[1]);
+
+            Console.WriteLine($"Skaiciu suma yra: {suma}");
+          
             Console.ReadLine();
         }
     }
