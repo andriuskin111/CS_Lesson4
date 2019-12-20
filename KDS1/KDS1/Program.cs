@@ -10,6 +10,16 @@ namespace KDS1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Iveskite bet koki skaiciu");
+            double skaicius = double.Parse(Console.ReadLine());
+
+            for(int i = 1; i <= skaicius; i++)
+            {
+                double suma = skaicius + i;
+                Console.WriteLine($"{skaicius} + {i} = {suma}");
+            }
+
+            Console.ReadLine();
         }
     }
 }
