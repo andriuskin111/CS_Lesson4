@@ -15,6 +15,11 @@ namespace KD1
                 Console.WriteLine($"Reiksme i: {i}");
             }
 
+            for (char c = 'A'; c <= 'Z'; c++)
+            {
+                Console.WriteLine(c);
+            }
+
             Console.ReadLine();
         }
     }
