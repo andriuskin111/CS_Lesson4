@@ -10,6 +10,12 @@ namespace KD1
     {
         static void Main(string[] args)
         {
+            for(int i = 10 - 1; i >= 0; i--)
+            {
+                Console.WriteLine($"Reiksme i: {i}");
+            }
+
+            Console.ReadLine();
         }
     }
 }
