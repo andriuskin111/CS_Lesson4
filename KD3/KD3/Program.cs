@@ -20,9 +20,26 @@ namespace KD3
                 "Sekmadienis"
             };
 
-            for (int i = 0; i < savaitesDienos.Length; i++)
+            //for (int i = 0; i < savaitesDienos.Length; i++)
+            //{
+            //    Console.WriteLine(savaitesDienos[i]);
+            //}
+
+            Console.WriteLine("Pries:");
+
+            foreach(var diena in savaitesDienos)
             {
-                Console.WriteLine(savaitesDienos[i]);
+                Console.WriteLine(diena);
+            }
+
+            savaitesDienos[2] = "TRECIADIENIS";
+
+            Console.WriteLine("");
+            Console.WriteLine("Po:");
+
+            foreach(var diena in savaitesDienos)
+            {
+                Console.WriteLine(diena);
             }
 
             Console.ReadLine();
