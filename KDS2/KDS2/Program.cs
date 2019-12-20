@@ -10,6 +10,15 @@ namespace KDS2
     {
         static void Main(string[] args)
         {
+            string sakinys = Console.ReadLine();
+
+            for (int i = sakinys.Length - 1; i >= 0; i--)
+            {
+                char simbolis = sakinys[i];
+                Console.Write(simbolis);
+            }
+
+            Console.ReadLine();
         }
     }
 }
