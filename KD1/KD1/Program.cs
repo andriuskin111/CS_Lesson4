@@ -10,14 +10,22 @@ namespace KD1
     {
         static void Main(string[] args)
         {
-            for(int i = 10 - 1; i >= 0; i--)
-            {
-                Console.WriteLine($"Reiksme i: {i}");
-            }
+            //for(int i = 10 - 1; i >= 0; i--)
+            //{
+            //    Console.WriteLine($"Reiksme i: {i}");
+            //}
 
-            for (char c = 'A'; c <= 'Z'; c++)
+            //for (char c = 'A'; c <= 'Z'; c++)
+            //{
+            //    Console.WriteLine(c);
+            //}
+
+            String vardas = "C#Kursas";
+
+            for (int i = 0; i < vardas.Length; i++)
             {
-                Console.WriteLine(c);
+                char current = vardas[i];
+                Console.WriteLine(current);
             }
 
             Console.ReadLine();
