@@ -33,6 +33,8 @@ namespace KDS2_4
             rastiDidziausiaSkaiciu();
             surusiuotiMasyva();
 
+            Array.Copy(rndSkaiciai, 0, surusiuotiSkaiciai, 0, rndSkaiciai.Length);
+
             Console.WriteLine();
             Console.WriteLine($"Maziausias skaicius yra: {maziausiasSkaicius}");
             Console.WriteLine($"Didziausias skaicius yra: {didziausiasSkaicius}");
@@ -76,15 +78,20 @@ namespace KDS2_4
                 return didziausiasSkaicius;
             }
 
-            void surusiuotiMasyva()
-            {
-                Array.Sort(rndSkaiciai);
-
-                for (int i = 0; i < rndSkaiciai.Length; i++)
+                void surusiuotiMasyva()
                 {
-                    surusiuotiSkaiciai[i] = rndSkaiciai[i];
+                    for (int i = 0; i < rndSkaiciai.Length - 1; i++)
+                    {
+                        for (int k = i + 1; k < rndSkaiciai.Length; k++)
+                        {
+                            if (rndSkaiciai[i] > rndSkaiciai[k])
+                            {
+                                (rndSkaiciai[i], rndSkaiciai[k]) = (rndSkaiciai[k], rndSkaiciai[i]);
+                            }
+                        }
+                    }
                 }
             }
-        }
+        
     }
 }
