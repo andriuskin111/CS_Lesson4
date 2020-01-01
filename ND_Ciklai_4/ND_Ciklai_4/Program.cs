@@ -10,6 +10,15 @@ namespace ND_Ciklai_4
     {
         static void Main(string[] args)
         {
+            for (int i = 0; i <= 100; i++)
+            {
+                if((i % 3) == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
+            Console.ReadLine();
         }
     }
 }
