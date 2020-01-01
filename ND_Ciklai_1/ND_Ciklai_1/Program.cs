@@ -10,6 +10,12 @@ namespace ND_Ciklai_1
     {
         static void Main(string[] args)
         {
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Andrius");
+            }
+
+            Console.ReadLine();
         }
     }
 }
