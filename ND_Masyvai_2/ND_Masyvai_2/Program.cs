@@ -10,6 +10,14 @@ namespace ND_Masyvai_2
     {
         static void Main(string[] args)
         {
+            int[] masyvas = { 1, 2, 3, 4, 5 };
+
+            foreach(int elementas in masyvas)
+            {
+                Console.WriteLine(elementas);
+            }
+
+            Console.ReadLine();
         }
     }
 }
