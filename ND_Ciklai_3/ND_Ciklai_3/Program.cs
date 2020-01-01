@@ -10,6 +10,16 @@ namespace ND_Ciklai_3
     {
         static void Main(string[] args)
         {
+            int suma = 0;
+
+            for (int i = 10; i <= 20; i++)
+            {
+                suma += i;
+            }
+
+            Console.WriteLine(suma);
+
+            Console.ReadLine();
         }
     }
 }
