@@ -17,7 +17,7 @@ namespace ND_Masyvai_4
             //    Console.Write($"{masyvas[i]} ");
             //}
 
-            for (int i = masyvas.Length - 1; i <= 0; i--)
+            for (int i = masyvas.Length - 1; i >= 0; i--)
             {
                 Console.Write($"{masyvas[i]} ");
             }
